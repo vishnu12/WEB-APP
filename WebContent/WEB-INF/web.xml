@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>TodoApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+
+<servlet-name>logout</servlet-name> 
+<servlet-class>mmp.session.Logout</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>logout</servlet-name>
+<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>Read</servlet-name> 
+<servlet-class>mmp.todo.Read</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>Read</servlet-name>
+<url-pattern>/read</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Edit</servlet-name> 
+<servlet-class>mmp.todo.Edit</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>Edit</servlet-name>
+<url-pattern>/edit</url-pattern>
+</servlet-mapping>
+  
+</web-app>
